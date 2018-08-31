@@ -7,6 +7,8 @@ const items = require('./routes/api/items');
 
 const app = express();
 
+// Item renamed
+
 // Bodyparser Middleware
 app.use(bodyParser.json());
 
