@@ -17,6 +17,7 @@
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.0",
     "express": "^4.16.3",
+    "help": "^3.0.2",
     "mongoose": "^5.1.6"
   },
   "devDependencies": {
