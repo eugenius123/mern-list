@@ -1,4 +1,3 @@
-
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -16,7 +15,7 @@ const db = require('./config/keys').mongoURI;
 
 // Connect to Mongo
 mongoose
-  .connect(db, { useNewUrlParser: true })
+  .connect(db, {useNewUrlParser: true}) // Adding new mongo url parser
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
