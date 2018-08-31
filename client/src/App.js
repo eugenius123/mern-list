@@ -5,13 +5,20 @@ import TodoList from './components/TodoList';
 
 import AppNavbar from './components/AppNavbar';
 
+import {Provider} from 'react-redux';
+import store from './store';
+
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <AppNavbar/>
-        <TodoList/>
-      </div>
+		<Provider store={store}>
+	      <div className="App">
+	        <AppNavbar/>
+	        <TodoList/>
+	      </div>
+
+	  </Provider>
     );
   }
 }
