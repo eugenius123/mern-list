@@ -7,8 +7,6 @@ const items = require('./routes/api/items');
 
 const app = express();
 
-// Item renamed
-
 // Bodyparser Middleware
 app.use(bodyParser.json());
 
@@ -17,7 +15,7 @@ const db = require('./config/keys').mongoURI;
 
 // Connect to Mongo
 mongoose
-  .connect(db, {useNewUrlParser: true}) // Adding new mongo url parser
+  .connect(db)
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
