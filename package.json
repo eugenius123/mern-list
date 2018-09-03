@@ -13,6 +13,10 @@
   },
   "author": "Eugene Yu",
   "license": "MIT",
+  "engines": {
+    "node": "10.7.0",
+    "npm": "6.4.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.0",
